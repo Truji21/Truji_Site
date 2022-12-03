@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to Truji's site!</title>
+	<link href='https://fonts.googleapis.com/css?family=Coming Soon' rel='stylesheet'>
+	<style type="text/css">		
+		*{
+		font-family: "Comic Sans MS";
+		font-size: 20px;
+		margin: 0;
+		padding: 0;
+		}
+
+		body{
+			background-image: url("content/back.gif");
+		}
+
+		header{
+			margin-top: 20px;
+		}
+
+		h1{
+		font-size: 55px;
+		display: inline;
+		}
+
+		p#music{
+			color: #ffff;
+		}
+
+		p#music:hover, p#music:active {
+  		color: #e3fc03;
+
+  		}
+
+		main{
+		margin-top: 30px;
+		}
+
+		h2{
+		margin-bottom: 10px;
+		font-size: 30px;
+		text-decoration: underline;
+		}
+
+		section{
+			margin: 20px 12%;
+			background-color: rgba(0, 60, 255, 0.5);
+			color: #ffff;
+			padding: 20px 100px;
+		}
+
+		h3{
+			font-size: 22px;
+		}
+
+		nav#links{
+		color: #ffff; 
+		margin-left: 20px;
+		margin-top: 10px;
+		width: 200px;
+		}
+
+		a{
+		text-align: center;
+  		text-decoration: none;
+		display: inline-block;
+		margin-bottom: 8px;
+		margin-left: 30px;
+		border-radius: 5px;
+		color: #ffff;
+		}
+
+		a:hover, a:active {
+  		color: blue;
+  		}
+	</style>
+	<script type="text/javascript">
+		var x=0;
+		function Colors(){
+			var text=["#fc0303","#fc7303","#dffc03","#03fc0f","#03fce7","#33a3ff","#0026fc","#8600fc","#fc00ca"];
+			document.getElementById("rainbow").style.color=text[x];
+			x=(x+1)%text.length;
+		}
+		setInterval (Colors,100)
+
+		function Hip(){
+		var audio = new Audio('content/Hip_Shop.mp3');
+		audio.play();
+		}
+
+	</script>
+</head>
+
+<body onload="Colors();">
+
+	<img src="content/Nyan_Cat.gif" height="100px" width="100px">
+	<p id="music" type=button onclick="Hip();" style="margin-left: 20px;">Click para inmersión</p>
+
+	<center>
+		<header>
+				<img src="content/Isaac_Hyper.gif" height="50px" width="50px">
+				<h1 Id="rainbow">La Tecnolog&iacute;a y Nuestro Futuro</h1>
+				<img src="content/Isaac_Hyper.gif" height="50px" width="50px">
+		</header>
+	</center>
+
+	<main>
+		<section style="background-color: rgba(255, 215, 13);">
+			<center>
+				<h2>Salud</h2>
+					<h2>Marmu se fue a la guerra, que dolor que dolor que pena</h2>
+				<p>dsadsadsadsa</p>
+			</center>
+		</section>
+		<marquee direction="right" scrollamount="40" style="color: #ffff">Gracias por Visitar :)</marquee>
+	</main>
+</body>
+</html>
